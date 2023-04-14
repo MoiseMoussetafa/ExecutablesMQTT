@@ -16,8 +16,8 @@
 ## How to use
 - Clone the repo and go into it
 ```
-$ git clone ...
-$ cd <repo>
+$ git clone git@github.com:MoiseMoussetafa/ExecutablesMQTT.git
+$ cd TP_MQTT
 ```
 - Launch the executable which allows to subscribe to the topic
 ```
@@ -35,8 +35,8 @@ $ ./PublicationExecutable
 
 - Clone the repo and go in the cloned repo
 ```
-$ git clone ...
-$ cd <repo>
+$ git clone git@github.com:MoiseMoussetafa/ExecutablesMQTT.git
+$ cd TP_MQTT
 ```
 `Souscription.cpp` and `Publication.cpp` are the two source files.   
 `CMakeLists.txt` is the prerequisite for CMake compilation.   
