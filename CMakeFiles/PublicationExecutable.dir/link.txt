@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/PublicationExecutable.dir/publication.cpp.o -o PublicationExecutable  -lpaho-mqttpp3 -lpaho-mqtt3as 
