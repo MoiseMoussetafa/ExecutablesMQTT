@@ -56,3 +56,16 @@ In a second terminal, from the same cloned repo :
 ```
 $ ./PublicationExecutable
 ```
+
+---
+# Captures d'écran 
+
+## TD : Communication MQTT avec MQTTX
+
+![image](https://user-images.githubusercontent.com/72506988/232084245-290694d2-ea1c-464c-b5a0-687d21ce60d1.png)
+
+## TP : Communication MQTT en C++
+
+
+
+--- 
