@@ -10,17 +10,22 @@ const string s_TOPIC("/ynov/bordeaux/");
 int main() 
 {
     mqtt::client client(s_BROKER_ADDRESS, s_CLIENT_ID);
-
     mqtt::connect_options options;
     options.set_keep_alive_interval(20);
     options.set_clean_session(true);
 
     try {
+        //Connect
         client.connect(options);
-        mqtt::message_ptr msg = mqtt::make_message(s_TOPIC, "wola moi c'est Moïse"); //Message to send
-        msg->set_qos(0); //Specification of QoS 0
-        client.subscribe(s_TOPIC, 0); //Subscribe to topic with QoS 0
+        //Message to send
+        mqtt::message_ptr msg = mqtt::make_message(s_TOPIC, "wola moi c'est Moïse");
+        //Specification of QoS 0
+        msg->set_qos(0); 
+        //Subscribe to topic with QoS 0
+        client.subscribe(s_TOPIC, 0);
+        //Publish the message
         client.publish(msg);
+        //Disconnect
         client.disconnect();
     }
     catch (const mqtt::exception& exc) {

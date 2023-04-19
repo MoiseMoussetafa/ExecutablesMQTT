@@ -17,9 +17,11 @@ public:
 
     virtual void message_arrived(mqtt::const_message_ptr msg)
     {
-        if(msg->get_qos() == 0) //Verification of QoS
+        //Verification of QoS
+        if(msg->get_qos() == 0)
         {
-            if(msg->get_topic() == s_TOPIC) //Verification of topic
+            //Verification of topic
+            if(msg->get_topic() == s_TOPIC)
             {
                 cout << "Received message : " << msg->to_string() << endl;
             }
@@ -42,9 +44,13 @@ int main()
     client.set_callback(callback);
 
     try {
+        //Connect
         client.connect(options);
-        client.subscribe(s_TOPIC, 0); //Subscribe to topic with QoS 0
+        //Subscribe to topic with QoS 0
+        client.subscribe(s_TOPIC, 0);
+        //Stay connected
         while(true){}
+        //Disconnect
         client.disconnect();
     }
     catch (const mqtt::exception& exc) 
