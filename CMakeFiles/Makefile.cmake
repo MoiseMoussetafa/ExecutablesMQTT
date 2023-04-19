@@ -43,6 +43,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/SouscriptionExecutable.dir/DependInfo.cmake"
+  "CMakeFiles/SubscriptionExecutable.dir/DependInfo.cmake"
   "CMakeFiles/PublicationExecutable.dir/DependInfo.cmake"
   )

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/SubscriptionExecutable.dir/subscription.cpp.o -o SubscriptionExecutable  -lpaho-mqttpp3 -lpaho-mqtt3as 
