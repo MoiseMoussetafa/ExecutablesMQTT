@@ -21,7 +21,7 @@ $ cd TP_MQTT
 ```
 - Launch the executable which allows to subscribe to the topic
 ```
-$ ./SouscriptionExecutable
+$ ./SubscriptionExecutable
 ```
 In a second terminal, from the same cloned repo :
 - Launch the executable which allows to publish on the topic
@@ -38,7 +38,7 @@ $ ./PublicationExecutable
 $ git clone git@github.com:MoiseMoussetafa/ExecutablesMQTT.git
 $ cd TP_MQTT
 ```
-`Souscription.cpp` and `Publication.cpp` are the two source files.   
+`Subscription.cpp` and `Publication.cpp` are the two source files.   
 `CMakeLists.txt` is the prerequisite for CMake compilation.   
 These 3 files are the 3 main files. Modifications of these files is possible, know what you are doing to keep the project functional.   
 
@@ -49,7 +49,7 @@ $ make
 ```
 - Launch the executable which allows to subscribe to the topic
 ```
-$ ./SouscriptionExecutable
+$ ./SubscriptionExecutable
 ```
 In a second terminal, from the same cloned repo :
 - Launch the executable which allows to publish on the topic
